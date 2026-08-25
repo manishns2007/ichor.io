@@ -48,8 +48,9 @@ class EvidenceUpdaterTest {
     @Test
     fun `explanation for quadratic support mentions quadratic model`() {
         val state = EvidenceUpdater.update(hypotheses, observedRatio = 4.0, velocityRatio = 2.0)
-        // Should mention R ∝ v² in some form
-        assertThat(state.explanation.lowercase()).containsMatch("quadratic|v²|r ∝ v")
+        // Explanation must mention the quadratic model
+        val lower = state.explanation.lowercase()
+        assertThat(lower.contains("quadratic") || lower.contains("v²") || lower.contains("r ∝ v")).isTrue()
     }
 
     @Test

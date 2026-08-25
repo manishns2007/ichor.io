@@ -171,28 +171,28 @@ private fun LearningJourneySummary() {
             value = "R ∝ v  (Linear)",
             color = HypothesisLinearColor
         )
-        Divider(color = BorderSubtle, thickness = 1.dp)
+        HorizontalDivider(color = BorderSubtle, thickness = 1.dp)
         JourneyStep(
             icon = "🧪",
             label = "Experiment",
             value = "Physics simulation",
             color = CauselyViolet
         )
-        Divider(color = BorderSubtle, thickness = 1.dp)
+        HorizontalDivider(color = BorderSubtle, thickness = 1.dp)
         JourneyStep(
             icon = "📊",
             label = "Evidence",
             value = "Supported Quadratic",
             color = HypothesisQuadraticColor
         )
-        Divider(color = BorderSubtle, thickness = 1.dp)
+        HorizontalDivider(color = BorderSubtle, thickness = 1.dp)
         JourneyStep(
             icon = "✓",
             label = "Updated Model",
             value = "R ∝ v²  (Quadratic)",
             color = CauselyGreen
         )
-        Divider(color = BorderSubtle, thickness = 1.dp)
+        HorizontalDivider(color = BorderSubtle, thickness = 1.dp)
         JourneyStep(
             icon = "🚀",
             label = "Transfer",
